@@ -1,0 +1,60 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch",
+      "type": "go",
+      "request": "launch",
+      "mode": "debug",
+      "remotePath": "",
+      "port": 8000,
+      "host": "127.0.0.1",
+      "program": "${workspaceRoot}",
+      "env": {
+        "GOFLAGS": "-mod=vendor",
+        "PORT": "8000",
+        "GIN_MODE": "debug",
+        // "DB_HOST": "172.25.13.46:3306",
+        // "DB_USERNAME": "root",
+        // "DB_PASSWORD": "eBao1234",
+        // "DB_TYPE": "mysql",
+        "DB_HOST": "172.25.13.46:3306",
+        "DB_USERNAME": "root",
+        "DB_PASSWORD": "eBao1234",
+        "DB_TYPE": "mysql",
+        "REDIS_URL": "172.25.13.46",
+        "REDIS_PORT": "6379",
+        "REDIS_PASSWORD": "eAf012m@31",
+        // "REDIS_PASSWORD": "zlrjvJHqwQrA",
+        // "REDIS_SENTINEL_NODES": "172.25.9.49:16379,172.25.9.51:16379,172.25.9.57:16379",
+        // "REDIS_SENTINEL_MASTER": "redisha",
+        "ENV_PROFILE_NAME": "ebao",
+        "CAS_AUTH_URL": "http://172.25.16.153:30017/account/signin",
+        "ebao_config_center_url": "http://172.25.16.153:30010",
+        "CONFIG_SOURCE": "Env",
+        "ETCD_HOST": "172.25.13.46:2379",
+        "ETCD_USER": "ebaoreader",
+        "ETCD_PASSWORD": "eBao1234",
+        "CAS_DOMAIN": "https://dev.ebaocloud.com",
+        "CAS_IGNORE_URI": "https://dev.ebaocloud.com,https://sit.ebaocloud.com",
+        "APP_HOST": "http://localhost:8000",
+        "MAIL_SENDER": "ebaocloud.appadmin@ebaotech.com",
+        "ENCRYPT_ALGORITHM": "MD5",
+        "TRACE_DISABLE": "ON",
+        "JAEGER_ENABLE": "OFF",
+        "CAS_TWO_FACTOR_ENABLE": "ON",
+        "CAS_CONCURRENCY_DISABLE": "ON",
+        "USER_SERVICE": "http://172.25.16.153:30017",
+        "EMAIL_SERVICE": "http://172.25.16.153:30012",
+        "sms_SERVICE": "http://172.25.16.153:30011",
+        // "DEVOPS_SERVICE": "http://172.25.16.153:30020"
+        "DEVOPS_SERVICE": "http://172.25.16.153:30016"
+      },
+      "args": [],
+      "showLog": true
+    }
+  ]
+}
